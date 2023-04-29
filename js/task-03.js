@@ -40,15 +40,15 @@ const galleryEl = document.querySelector('.gallery')
 
 const makeGalleryTable = images
 .map(makeGalleryMarkup)
-// .join('')
+.join('')
 
-console.log(makeGalleryTable);
-
-
-
-galleryEl.append(...makeGalleryTable)
+// console.log(makeGalleryTable);
 
 
 
-// galleryEl.insertAdjacentHTML('afterbegin', makeGalleryTable)
+// galleryEl.append(...makeGalleryTable)
+
+
+
+galleryEl.insertAdjacentHTML('afterbegin', makeGalleryTable)
 
